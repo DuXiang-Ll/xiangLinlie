@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XIANGLINLIE — AI Anime Commerce Nexus</title>
+  <meta name="description" content="Chengdu Xianglinlie E-commerce Co., Ltd. — Where AI imagination meets global digital commerce." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="anime-bg" aria-hidden="true"></canvas>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <div class="orbital-ui" id="orbital-ui">
+    <!-- Central AI Core -->
+    <div class="core-zone">
+      <div class="core-ring ring-1"></div>
+      <div class="core-ring ring-2"></div>
+      <div class="core-ring ring-3"></div>
+      <div class="core-eye">
+        <div class="iris"></div>
+        <div class="pupil"></div>
+        <div class="core-glitch"></div>
+      </div>
+      <h1 class="core-title">
+        <span class="glitch" data-text="XIANGLINLIE">XIANGLINLIE</span>
+      </h1>
+      <p class="core-sub">AI ANIME COMMERCE NEXUS</p>
+    </div>
+
+    <!-- Orbital Navigation -->
+    <nav class="orbit-nav" aria-label="Main navigation">
+      <button class="orbit-node active" data-panel="vision" style="--angle: 0deg">
+        <span class="node-icon">◈</span>
+        <span class="node-label">VISION</span>
+      </button>
+      <button class="orbit-node" data-panel="power" style="--angle: 60deg">
+        <span class="node-icon">⚡</span>
+        <span class="node-label">POWER</span>
+      </button>
+      <button class="orbit-node" data-panel="services" style="--angle: 120deg">
+        <span class="node-icon">✦</span>
+        <span class="node-label">SERVICES</span>
+      </button>
+      <button class="orbit-node" data-panel="about" style="--angle: 180deg">
+        <span class="node-icon">◎</span>
+        <span class="node-label">ABOUT</span>
+      </button>
+      <button class="orbit-node" data-panel="contact" style="--angle: 240deg">
+        <span class="node-icon">✉</span>
+        <span class="node-label">CONTACT</span>
+      </button>
+      <button class="orbit-node" data-panel="future" style="--angle: 300deg">
+        <span class="node-icon">∞</span>
+        <span class="node-label">FUTURE</span>
+      </button>
+    </nav>
+
+    <!-- Floating Content Panels — positioned radially, not stacked -->
+    <div class="panel-field">
+      <article class="content-panel active" id="panel-vision" data-tilt="12">
+        <div class="panel-edge"></div>
+        <header class="panel-header">
+          <span class="panel-id">01 / VISION</span>
+          <h2>Where Anime Dreams<br/>Become Commerce Reality</h2>
+        </header>
+        <p>We fuse cutting-edge artificial intelligence with the explosive visual language of anime — transforming e-commerce into an immersive, emotionally charged experience that transcends borders.</p>
+        <div class="stat-row">
+          <div class="stat"><span class="stat-num" data-count="99">0</span><span class="stat-unit">%</span><span class="stat-label">AI Precision</span></div>
+          <div class="stat"><span class="stat-num" data-count="360">0</span><span class="stat-unit">°</span><span class="stat-label">Immersive</span></div>
+        </div>
+      </article>
+
+      <article class="content-panel" id="panel-power" data-tilt="-8">
+        <div class="panel-edge"></div>
+        <header class="panel-header">
+          <span class="panel-id">02 / POWER</span>
+          <h2>The Raw Force of<br/>AI-Generated Worlds</h2>
+        </header>
+        <p>Our neural engines don't just process data — they <em>dream</em>. Hyper-real anime aesthetics, dynamic character synthesis, and lightning-fast generative pipelines power every pixel of your digital storefront.</p>
+        <ul class="power-list">
+          <li><span class="pulse-dot"></span>Generative Anime Visual Systems</li>
+          <li><span class="pulse-dot"></span>Neural Commerce Intelligence</li>
+          <li><span class="pulse-dot"></span>Real-time Style Transfer Engines</li>
+          <li><span class="pulse-dot"></span>Cross-border Digital Distribution</li>
+        </ul>
+      </article>
+
+      <article class="content-panel" id="panel-services" data-tilt="15">
+        <div class="panel-edge"></div>
+        <header class="panel-header">
+          <span class="panel-id">03 / SERVICES</span>
+          <h2>Digital Commerce<br/>Reimagined</h2>
+        </header>
+        <div class="service-grid">
+          <div class="service-card">
+            <div class="service-glow"></div>
+            <h3>AI Visual Commerce</h3>
+            <p>Anime-styled product showcases powered by generative AI — every listing a masterpiece.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-glow"></div>
+            <h3>Global E-Commerce</h3>
+            <p>Cross-border digital trade infrastructure connecting Chengdu to the world.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-glow"></div>
+            <h3>Brand Universe Design</h3>
+            <p>Build entire anime-inspired brand worlds that captivate and convert.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-glow"></div>
+            <h3>Neural Analytics</h3>
+            <p>AI-driven insights that predict trends before they explode.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="content-panel" id="panel-about" data-tilt="-12">
+        <div class="panel-edge"></div>
+        <header class="panel-header">
+          <span class="panel-id">04 / ABOUT</span>
+          <h2>Chengdu Xianglinlie<br/>E-Commerce Co., Ltd.</h2>
+        </header>
+        <p>Headquartered in the heart of Chengdu's Qingyang District, we are pioneers at the intersection of artificial intelligence, anime culture, and global digital commerce.</p>
+        <dl class="corp-info">
+          <div class="info-row">
+            <dt>Legal Entity</dt>
+            <dd>Chengdu Xianglinlie E-Commerce Co., Ltd.</dd>
+          </div>
+          <div class="info-row">
+            <dt>USCC</dt>
+            <dd>91510105MA7N0CW31R</dd>
+          </div>
+          <div class="info-row">
+            <dt>Headquarters</dt>
+            <dd>No. 18, Floor 1, Unit 1, Building 2,<br/>No. 1 Beidong Street, Qingyang District,<br/>Chengdu, Sichuan, China</dd>
+          </div>
+        </dl>
+      </article>
+
+      <article class="content-panel" id="panel-contact" data-tilt="6">
+        <div class="panel-edge"></div>
+        <header class="panel-header">
+          <span class="panel-id">05 / CONTACT</span>
+          <h2>Initiate<br/>Connection</h2>
+        </header>
+        <p>Ready to unleash the power of AI anime commerce? Reach out and let's build something extraordinary together.</p>
+        <a href="mailto:dis2137papaj@gmail.com" class="contact-beam">
+          <span class="beam-icon">✉</span>
+          <span class="beam-text">dis2137papaj@gmail.com</span>
+          <span class="beam-arrow">→</span>
+        </a>
+        <div class="contact-meta">
+          <span>Chengdu, China</span>
+          <span class="meta-sep">◆</span>
+          <span>Global Operations</span>
+        </div>
+      </article>
+
+      <article class="content-panel" id="panel-future" data-tilt="-5">
+        <div class="panel-edge"></div>
+        <header class="panel-header">
+          <span class="panel-id">06 / FUTURE</span>
+          <h2>The Next Dimension<br/>Awaits</h2>
+        </header>
+        <p>We are not building websites. We are architecting <strong>living digital universes</strong> — where AI breathes life into anime aesthetics and commerce becomes an adventure.</p>
+        <div class="future-quote">
+          <blockquote>"In the fusion of silicon dreams and ink-stroke souls, commerce transcends transaction — it becomes legend."</blockquote>
+        </div>
+        <div class="cta-zone">
+          <a href="mailto:dis2137papaj@gmail.com" class="cta-button">
+            <span class="cta-bg"></span>
+            <span class="cta-text">ENTER THE NEXUS</span>
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Diagonal energy beams connecting nodes -->
+    <svg class="energy-web" viewBox="0 0 1000 1000" aria-hidden="true">
+      <defs>
+        <linearGradient id="beamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.8"/>
+          <stop offset="50%" stop-color="#ff00aa" stop-opacity="0.6"/>
+          <stop offset="100%" stop-color="#7b2fff" stop-opacity="0.3"/>
+        </linearGradient>
+      </defs>
+      <line class="beam" x1="500" y1="500" x2="500" y2="120" />
+      <line class="beam" x1="500" y1="500" x2="830" y2="310" />
+      <line class="beam" x1="500" y1="500" x2="830" y2="690" />
+      <line class="beam" x1="500" y1="500" x2="500" y2="880" />
+      <line class="beam" x1="500" y1="500" x2="170" y2="690" />
+      <line class="beam" x1="500" y1="500" x2="170" y2="310" />
+    </svg>
+  </div>
+
+  <!-- Scroll/drag hint -->
+  <div class="orbit-hint" id="orbit-hint">
+    <span class="hint-wheel">⟳</span>
+    <span>Scroll or drag to orbit</span>
+  </div>
+
+  <!-- Progress arc -->
+  <div class="orbit-progress" aria-hidden="true">
+    <svg viewBox="0 0 60 60">
+      <circle class="progress-track" cx="30" cy="30" r="26" />
+      <circle class="progress-fill" id="progress-fill" cx="30" cy="30" r="26" />
+    </svg>
+    <span class="progress-label" id="progress-label">01</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
