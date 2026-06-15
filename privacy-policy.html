@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <title>Stillix Photo Toolkit Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --card: #ffffff;
+      --text: #202124;
+      --muted: #5f6368;
+      --border: #e6e4df;
+      --accent: #8a623d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 32px auto;
+      padding: 28px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 12px 40px rgba(32, 33, 36, 0.06);
+    }
+    h1 {
+      margin: 0 0 6px;
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+    h2 {
+      margin: 30px 0 10px;
+      font-size: 20px;
+      line-height: 1.3;
+    }
+    p { margin: 10px 0; }
+    ul { padding-left: 22px; }
+    li { margin: 7px 0; }
+    a { color: var(--accent); }
+    .meta {
+      margin-bottom: 24px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .notice {
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: #fbfaf8;
+    }
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      display: table;
+    }
+    .table th, .table td {
+      padding: 12px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+    .table tr:last-child td { border-bottom: 0; }
+    .table th {
+      background: #fbfaf8;
+      font-weight: 600;
+    }
+    footer {
+      margin-top: 32px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Stillix Photo Toolkit · Package: com.stillix.phototoolkit · Effective date: June 15, 2026</p>
+
+    <p>
+      Stillix Photo Toolkit ("Stillix", "we", "our", or "the app") is an offline Android photo utility for batch image processing,
+      collage creation, image information, and quick crop tools. This Privacy Policy explains how the app handles photos,
+      files, local settings, and permissions.
+    </p>
+
+    <div class="notice">
+      <strong>Short version:</strong> Stillix does not collect, sell, share, upload, or transmit personal data or photos.
+      Image processing happens locally on your device. The app does not use ads, analytics, account login, cloud sync, or internet access.
+    </div>
+
+    <h2>Data We Collect</h2>
+    <p>
+      We do not collect personal data from users. Stillix does not operate a server and does not transmit your photos,
+      files, identifiers, usage activity, or device information to us or to third parties.
+    </p>
+
+    <table class="table" aria-label="Data collection summary">
+      <thead>
+        <tr>
+          <th>Data type</th>
+          <th>Collected by Stillix?</th>
+          <th>Explanation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Photos and videos</td>
+          <td>No</td>
+          <td>Selected photos are processed locally on your device. They are not uploaded or sent to any server.</td>
+        </tr>
+        <tr>
+          <td>Personal information</td>
+          <td>No</td>
+          <td>No account, name, email, phone number, or address is requested by the app.</td>
+        </tr>
+        <tr>
+          <td>App activity or analytics</td>
+          <td>No</td>
+          <td>No analytics SDK, tracking SDK, advertising SDK, or crash reporting SDK is integrated.</td>
+        </tr>
+        <tr>
+          <td>Device identifiers</td>
+          <td>No</td>
+          <td>The app does not collect advertising IDs, Android IDs, or other device identifiers.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>How Photos Are Handled</h2>
+    <p>
+      When you choose images, Stillix uses the Android system Photo Picker. This means you select exactly which images
+      the app can access. Stillix reads the selected images only to perform the action you request, such as compression,
+      resizing, format conversion, renaming, EXIF stripping, collage rendering, image information, or quick crop.
+    </p>
+    <p>
+      Exported files are saved locally to your device gallery using Android MediaStore scoped storage, typically under
+      <strong>Pictures/Stillix/</strong>. Original images are not modified; Stillix saves new processed copies.
+    </p>
+
+    <h2>Local Data Stored on Your Device</h2>
+    <p>
+      Stillix may store app preferences and non-personal local history on your device, such as theme preference,
+      default export quality, default export format, job type, success count, and timestamps. This information is stored
+      locally using Android DataStore and Room database. It is not uploaded, shared, or used for tracking.
+    </p>
+    <p>
+      You can clear job history and app cache from the app's Settings screen. You can also remove all local app data by
+      uninstalling the app or clearing app storage in Android system settings.
+    </p>
+
+    <h2>Permissions</h2>
+    <p>
+      Stillix is designed to use the minimum permissions required. Based on the current app manifest, the app does not request
+      camera, internet, broad storage, all-files access, or all-apps query permissions.
+    </p>
+    <table class="table" aria-label="Permission usage">
+      <thead>
+        <tr>
+          <th>Permission</th>
+          <th>Status</th>
+          <th>Reason</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Camera</td>
+          <td>Not requested</td>
+          <td>Stillix does not take photos or use the device camera.</td>
+        </tr>
+        <tr>
+          <td>Internet</td>
+          <td>Not requested</td>
+          <td>The app works offline and does not connect to servers.</td>
+        </tr>
+        <tr>
+          <td>Read/write external storage</td>
+          <td>Not requested</td>
+          <td>Photo selection uses the system Photo Picker; exports use MediaStore scoped storage.</td>
+        </tr>
+        <tr>
+          <td>Manage all files</td>
+          <td>Not requested</td>
+          <td>The app does not need broad file management access.</td>
+        </tr>
+        <tr>
+          <td>Query all packages</td>
+          <td>Not requested</td>
+          <td>The app does not inspect installed apps.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Third-Party Services</h2>
+    <p>
+      Stillix does not include third-party advertising, analytics, tracking, social login, or cloud storage services.
+      The app uses standard Android and AndroidX components to provide local app functionality.
+    </p>
+
+    <h2>Data Sharing and Sale</h2>
+    <p>
+      We do not sell personal data. We do not share user data with third parties. Since Stillix does not collect user data,
+      there is no user data for us to sell, share, or transfer.
+    </p>
+
+    <h2>Children's Privacy</h2>
+    <p>
+      Stillix does not knowingly collect personal information from children or from any other users. The app is a general
+      photo utility and does not include social features, user accounts, or user-generated content sharing.
+    </p>
+
+    <h2>Security</h2>
+    <p>
+      Stillix processes images locally on your device. Because the app does not transmit user data, there is no data transfer
+      from the app to our servers. Local files and app data remain under the protection of your Android device and operating system.
+    </p>
+
+    <h2>Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time, for example if app features or legal requirements change.
+      The effective date at the top of this page will be updated when changes are made.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      If you have questions about this Privacy Policy or Stillix Photo Toolkit, contact us at:
+      <a href="mailto:dis2137papaj@gmail.com">dis2137papaj@gmail.com</a>
+    </p>
+
+    <footer>
+      This policy is intended for the Google Play listing for Stillix Photo Toolkit.
+    </footer>
+  </main>
+</body>
+</html>
